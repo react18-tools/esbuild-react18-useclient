@@ -1,0 +1,25 @@
+{
+  "name": "esbuild-react18-useclient",
+  "version": "1.0.0",
+  "description": "esbuild plugin for compiling libraries compatible with React 18 server and client component, Nextjs13, Remix, etc.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mayank1513/esbuild-react18-useclient.git"
+  },
+  "keywords": [
+    "react",
+    "nextjs",
+    "react18",
+    "react-server-components",
+    "react-client-components",
+    "use client",
+    "rsc compatible"
+  ],
+  "author": "Mayank Kumar Chaudhari <https://mayank-chaudhari.vercel.app>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mayank1513/esbuild-react18-useclient/issues"
+  },
+  "homepage": "https://github.com/mayank1513/esbuild-react18-useclient#readme"
+}
