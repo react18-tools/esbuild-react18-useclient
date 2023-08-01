@@ -20,4 +20,4 @@ const reactUseClientPlugIn: Plugin = {
   },
 };
 
-export default reactUseClientPlugIn;
+module.exports = reactUseClientPlugIn;
