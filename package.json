@@ -20,6 +20,7 @@
     "esbuild-plugin",
     "useclient",
     "tsup",
+    "typescript",
     "react18",
     "react-server-components",
     "react-client-components",

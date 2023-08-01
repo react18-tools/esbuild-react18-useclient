@@ -6,9 +6,20 @@
 
 This is an `esbuild` plugin for compiling libraries compatible with React 18 server and client component, Nextjs13, Remix, etc.
 
+## Why?
+
+- Unleash the power of combining react client and server components in your libraries
+- TypeScript out of the box
+- Simple and tiny
+- Easy to use - just add the plugin and you are good to go
+
 Introduction of React server components in React 18 has unlocked immense possibilities. However, library authors are not yet able to fully encash upon this potential. Many libraries like `chakra-ui`, simply add "use client" for each component. However, much more can be unlashed when we can use both server and client components to build libraries.
 
-This plugin seamlessly integrates with `tsup` and other builders based on `esbuild`. With this you can have both server and client components in your library and the plugin will take care of the rest. All you need to do is add this plugin and add `"use client";` on top of client components.
+## Compatibility
+
+- JavaScript/TypeScript React libraries using `tsup` or other builders based on `esbuild`
+
+This plugin seamlessly integrates with `tsup` and other builders based on `esbuild`. With this you can have both server and client components in your library and the plugin will take care of the rest. All you need to do is add this plugin and add `"use client";` on top of client components (in your source code).
 
 ## Add dependencies:
 
