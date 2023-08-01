@@ -10,7 +10,8 @@
   },
   "scripts": {
     "build": "tsup src --dts && node createPackageJSON.js",
-    "publish-package": "npm run build && cp README.md dist/README.md"
+    "publish-package": "npm run build && cp README.md dist/README.md && cd dist && npm publish && cd ..",
+    "publish-gpr": "node prepGPR.js && cd dist && npm publish"
   },
   "keywords": [
     "react",
