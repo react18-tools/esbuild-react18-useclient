@@ -28,6 +28,12 @@ or
 npm install -D esbuild-react18-useclient
 ```
 
+
+
+> If you are using `monorepo` or `workspaces` you can install this plugin to root using `-w` or to specific workspace using `--filter your-package` or `--scope your-package` for `pnpm` and `yarn` workspaces respectively.
+
+
+
 ## Use with `tsup`
 
 ```javascript
@@ -44,3 +50,9 @@ export default defineConfig(options => ({
 ## License
 
 Licensed as MIT open source.
+
+
+
+<hr />
+
+<p style="text-align:center">with 💖 by <a href="https://mayank-chaudhari.vercel.app" target="_blank">Mayank Kumar Chaudhari</a></p>

@@ -1,6 +1,8 @@
+import { Plugin } from "esbuild";
+
 const rxp = /['"]use client['"]\s?;/i;
 
-module.exports = {
+const reactUseClientPlugIn: Plugin = {
   name: "esbuild-react18-useclient",
   setup(build) {
     build.onEnd((result) => {
@@ -17,3 +19,5 @@ module.exports = {
     });
   },
 };
+
+export default reactUseClientPlugIn;

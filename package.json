@@ -3,13 +3,22 @@
   "version": "1.0.0",
   "description": "esbuild plugin for compiling libraries compatible with React 18 server and client component, Nextjs13, Remix, etc.",
   "main": "index.js",
+  "types": "index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mayank1513/esbuild-react18-useclient.git"
   },
+  "scripts": {
+    "build": "tsup src --dts && node createPackageJSON.js",
+    "publish-package": "npm run build && cp README.md dist/README.md"
+  },
   "keywords": [
     "react",
     "nextjs",
+    "esbuild",
+    "esbuild-plugin",
+    "useclient",
+    "tsup",
     "react18",
     "react-server-components",
     "react-client-components",
@@ -21,5 +30,11 @@
   "bugs": {
     "url": "https://github.com/mayank1513/esbuild-react18-useclient/issues"
   },
-  "homepage": "https://github.com/mayank1513/esbuild-react18-useclient#readme"
+  "homepage": "https://github.com/mayank1513/esbuild-react18-useclient#readme",
+  "devDependencies": {
+    "@types/node": "^18",
+    "esbuild": "^0.18.17",
+    "tsup": "^7.1.0",
+    "typescript": "^5.1.6"
+  }
 }
