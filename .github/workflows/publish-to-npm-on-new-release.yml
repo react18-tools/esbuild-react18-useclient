@@ -13,6 +13,9 @@ jobs:
         with:
           node-version: 16
           registry-url: https://registry.npmjs.org
+      - name: Unit Testing
+        run: npm run test
+
       - name: Update version
         run: |
           git config --global user.name "mayank1513"
