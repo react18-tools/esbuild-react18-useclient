@@ -13,9 +13,6 @@ jobs:
         with:
           node-version: 16
           registry-url: https://registry.npmjs.org
-      - name: Unit Testing
-        run: npm i && npm run test
-
       - name: Update version
         run: |
           git config --global user.name "mayank1513"
@@ -23,15 +20,19 @@ jobs:
           git fetch
           git checkout main
           npm version patch
-          npm -v
-          git push origin main
-      - run: npm run publish-package
+      - name: Build and Test
+        run: npm i && npm run build && npm run test
+      - name: Publish to npm
+        run: npm run publish-package
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
 
       - uses: actions/setup-node@v3
         with:
           registry-url: https://npm.pkg.github.com/
-      - run: npm run publish-gpr
+      - name: Publish to GitHub Public Repository
+        run: npm run publish-gpr
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+      - name: push version bump back to repo
+        run: git push origin main
