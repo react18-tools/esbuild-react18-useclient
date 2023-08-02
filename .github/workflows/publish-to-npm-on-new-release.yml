@@ -14,7 +14,7 @@ jobs:
           node-version: 16
           registry-url: https://registry.npmjs.org
       - name: Unit Testing
-        run: npm run test
+        run: npm i && npm run test
 
       - name: Update version
         run: |
@@ -22,7 +22,7 @@ jobs:
           git config --global user.email "mayank-automate@noreply.github.com"
           git fetch
           git checkout main
-          npm i && npm version patch
+          npm version patch
           npm -v
           git push origin main
       - run: npm run publish-package
