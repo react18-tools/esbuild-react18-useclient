@@ -1,4 +1,4 @@
-# esbuild-react18-useclient
+# esbuild-react18-useclient [![Version](https://img.shields.io/npm/v/esbuild-react18-useclient.svg?colorB=green)](https://www.npmjs.com/package/esbuild-react18-useclient) [![Downloads](https://img.jsdelivr.com/img.shields.io/npm/dt/esbuild-react18-useclient.svg)](https://www.npmjs.com/package/esbuild-react18-useclient) [![Publish to npm and GitHub](https://github.com/mayank1513/esbuild-react18-useclient/actions/workflows/publish-to-npm-on-new-release.yml/badge.svg)](https://github.com/mayank1513/esbuild-react18-useclient/actions/workflows/publish-to-npm-on-new-release.yml)
 
 <img src="https://github.com/mayank1513/esbuild-react18-useclient/blob/main/esbuild-react18.jpg?raw=true" title="Build Awesome Libraries using React Server Components and make your Mark!" style="width:100%"/>
 
@@ -6,7 +6,7 @@
 
 This is an `esbuild` plugin for compiling libraries compatible with React 18 server and client component, Nextjs13, Remix, etc.
 
-## Why? 
+## Why?
 
 - Unleash the power of combining react client and server components in your libraries
 - TypeScript out of the box
@@ -15,9 +15,13 @@ This is an `esbuild` plugin for compiling libraries compatible with React 18 ser
 
 Introduction of React server components in React 18 has unlocked immense possibilities. However, library authors are not yet able to fully encash upon this potential. Many libraries, like `chakra-ui`, simply add “use client” for each component. However, much more can be unleashed when we can use both server and client components to build libraries. Also check-out this [blog](https://mayank1513.medium.com/unleash-the-power-of-react-server-components-eb3fe7201231).
 
+## Example
+
+Checkout https://github.com/mayank1513/nextjs-themes
+
 ## Compatibility
 
-- JavaScript/TypeScript React libraries using `tsup` or other builders based on `esbuild` 
+- JavaScript/TypeScript React libraries using `tsup` or other builders based on `esbuild`
 
 This plugin seamlessly integrates with `tsup` and any other builders based on `esbuild`. With this you can have both server and client components in your library and the plugin will take care of the rest. All you need to do is add this plugin and add `"use client";` on top of client components (in your source code).
 
