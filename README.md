@@ -1,5 +1,8 @@
 # esbuild-react18-useclient [![Version](https://img.shields.io/npm/v/esbuild-react18-useclient.svg?colorB=green)](https://www.npmjs.com/package/esbuild-react18-useclient) [![Downloads](https://img.jsdelivr.com/img.shields.io/npm/dt/esbuild-react18-useclient.svg)](https://www.npmjs.com/package/esbuild-react18-useclient) [![Publish to npm and GitHub](https://github.com/mayank1513/esbuild-react18-useclient/actions/workflows/publish-to-npm-on-new-release.yml/badge.svg)](https://github.com/mayank1513/esbuild-react18-useclient/actions/workflows/publish-to-npm-on-new-release.yml)
 
+> This package is deprecated in favor of [esbuild-plugin-react18](https://github.com/mayank1513/esbuild-plugin-react18)
+> Please switch to [esbuild-plugin-react18](https://github.com/mayank1513/esbuild-plugin-react18), which also offers additional options and more control over your build output.
+
 <img src="https://github.com/mayank1513/esbuild-react18-useclient/blob/main/esbuild-react18.jpg?raw=true" title="Build Awesome Libraries using React Server Components and make your Mark!" style="width:100%"/>
 
 > Build Awesome Libraries using React Server Components and make your Mark!
@@ -8,10 +11,10 @@ This is an `esbuild` plugin for compiling libraries compatible with React 18 ser
 
 ## Why?
 
-- Unleash the power of combining react client and server components in your libraries
-- TypeScript out of the box
-- Simple and tiny
-- Easy to use — just add the plugin, and you are good to go
+✅ Unleash the power of combining react client and server components in your libraries
+✅ Full TypeScript support out of the box
+✅ Simple and tiny
+✅ Easy to use — just add the plugin, and you are good to go
 
 Introduction of React server components in React 18 has unlocked immense possibilities. However, library authors are not yet able to fully encash upon this potential. Many libraries, like `chakra-ui`, simply add “use client” for each component. However, much more can be unleashed when we can use both server and client components to build libraries. Also check-out this [blog](https://mayank1513.medium.com/unleash-the-power-of-react-server-components-eb3fe7201231).
 
