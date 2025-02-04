@@ -8,10 +8,10 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: 16
+          node-version: 20
           registry-url: https://registry.npmjs.org
       - name: Update version
         run: |
@@ -23,7 +23,7 @@ jobs:
       - name: Build and Test
         run: npm i && npm run build && npm run test
       - name: Upload coverage reports to Codecov
-        uses: codecov/codecov-action@v3
+        uses: codecov/codecov-action@v4
         env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
       - name: Publish to npm
@@ -31,12 +31,5 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
 
-      - uses: actions/setup-node@v3
-        with:
-          registry-url: https://npm.pkg.github.com/
-      - name: Publish to GitHub Public Repository
-        run: npm run publish-gpr
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
       - name: push version bump back to repo
         run: git push origin main
